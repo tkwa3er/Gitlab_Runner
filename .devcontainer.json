@@ -1,1 +1,3 @@
-"postAttachCommand": "chmod +x ./prepare.sh && ./prepare.sh"
+{
+  "postAttachCommand": "chmod +x ./prepare.sh && ./prepare.sh"
+}
