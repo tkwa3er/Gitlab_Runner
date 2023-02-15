@@ -5,10 +5,8 @@ echo '🦊===>  Installation GitLab Runner'
 sudo curl -L --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
       
       sudo chmod +x /usr/local/bin/gitlab-runner
-
+      cat /usr/local/gitlab-runner
       sudo useradd --comment 'GitLab Runner' --create-home gitlab-runner --shell /bin/bash
-
-      sudo usermod -aG gitpod gitlab-runner
 
       sudo chmod 666 /var/run/docker.sock
 
