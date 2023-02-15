@@ -2,7 +2,7 @@ export MY_CICD_REGISTRATION_TOKEN=GR1348941ckL4FBBSQTWxAD_3WrgU
 echo '🦊===> Your runner token is : '
 echo $MY_CICD_REGISTRATION_TOKEN
 echo '🦊===>  Installation GitLab Runner'
-curl -SL https://github.com/docker/compose/releases/download/v2.10.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+sudo curl -SL https://github.com/docker/compose/releases/download/v2.10.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 sudo curl -L --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
       
       sudo chmod +x /usr/local/bin/gitlab-runner
