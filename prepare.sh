@@ -15,9 +15,6 @@ sudo curl -L --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloa
       sudo gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner
 
       sudo gitlab-runner start
-      
-
-
       sudo gitlab-runner  register \
         --non-interactive \
         --executor "shell" \
